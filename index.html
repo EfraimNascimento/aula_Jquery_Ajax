@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página</title>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <button type="button">clique aqui</button>
+
+    <input type="text" id="cep">
+    <button type="button" onclick="consultaCep()">Consultar</button>
+    <p id="logradouro"></p>
+    <p id="bairro"></p>
+    <p id="localidade"></p>
+    <p id="uf"></p>
 </body>
 </html>
