@@ -5,14 +5,15 @@
     <title>Minha Página</title>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-5.1.1-dist/css/bootstrap.min.css">
 </head>
 <body>
-
-    <input type="text" id="cep">
-    <button type="button" onclick="consultaCep()">Consultar</button>
-    <p id="logradouro"></p>
-    <p id="bairro"></p>
-    <p id="localidade"></p>
-    <p id="uf"></p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">Consulta CEP</a>
+        <div class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="CEP" id="cep">
+          <button class="btn btn-outline-success" onclick="consultaCep()">Buscar</button>
+        </div>
+      </nav>
 </body>
 </html>
